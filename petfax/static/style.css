@@ -6,19 +6,19 @@ html {
 body {
     margin:0;
     font-family: sans-serif;
-    background-image: url("../../assets/minimal_background.jpg");
+    background-image: url("../assets/minimal_background.jpg") cover; 
     height: 100%;
     width: 100%;
-    
 }
 h1 {
-    margin: 10px;
+    margin: 0;
     display:flex;
     justify-content: center;
     height: fit-content;
     position: sticky;
     z-index: 100;
     top: 0;
+    background-color: white;
 
 }
 div {
@@ -32,6 +32,7 @@ div {
 
 .wrapper{
     margin:0;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,3 +47,25 @@ img {
     height: 75%;
     width: 75%
 }
+
+.facts-container {
+    margin:0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+a
+{
+    padding: 10px;
+    margin:0;
+    font-family: var(--accent-font);
+}
+
+
+input {
+    padding: 10px;
+    margin:0;
+}
+

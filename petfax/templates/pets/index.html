@@ -8,14 +8,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}"/>
 </head>
 <body>
-    <h1> Welcome to PetFax though rendertemplate</h1>
+    <h1> Welcome to PetFax ! 🐶🐱🐇 </h1>
         <div class="wrapper">
             {% for pet in pets %}
                 <div>
                     <h2>{{pet.pet_name}}</h2>
                     <img src="{{pet.pet_photo}}" alt="pet image"/>
+                    <a href="/pets/{{pet.pet_id}}" >Learn More </a>
                 </div>
             {% endfor %}
+        </div>
+        <div>
+            We'd love to learn more fun facts!
+            <a href="/facts/new">Submit here!</a>
         </div>
 </body>
 </html>
